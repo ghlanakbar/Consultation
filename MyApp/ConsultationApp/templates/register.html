@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div layout:fragment="content">
+	<div class="col-md-6">
+		
+               <form action="" method="POST">
+                   {% csrf_token %}
+                   {{ formregister.as_p }}
+                      <button type="submit" class="btn btn-primary" >Submit</button>
+                       <h1>{{msg}}</h1>
+                </form>
+    </div>
+</div>
+{% endblock %}
