@@ -22,7 +22,7 @@ def Register(request):
 		consultation.nom=form_data.cleaned_data['nom']
 		consultation.prenom=form_data.cleaned_data['prenom']
 		consultation.date_naissance=form_data.cleaned_data['date_naissance']
-		consultation.photo=form_data.cleaned_data['photo']
+		#consultation.photo=form_data.cleaned_data['photo']
 		consultation.sexe=form_data.cleaned_data['sexe']
 		consultation.groupe_sanguin=form_data.cleaned_data['groupe_sanguin']
 		consultation.poids=form_data.cleaned_data['poids']
