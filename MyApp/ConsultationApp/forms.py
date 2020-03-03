@@ -18,7 +18,7 @@ g_choice = (
 		)
 
 class UserRegistrar(forms.Form):
-	photo = forms.ImageField()
+	#photo = forms.ImageField()
 	nom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	prenom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	date_naissance = forms.CharField(required=True, widget=forms.DateInput(attrs={'class': 'form-control'} ))
