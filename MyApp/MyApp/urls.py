@@ -23,5 +23,5 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
     url(r'^admin/', admin.site.urls),
     url(r'^consultation/$',Consultation,name='consultation'),
-    url(r'^register/$',Register,name='register'),
+    url(r'^$',Register,name='register'),
 ]
