@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Liste des consultations</h2>
+<table border="1" style="font-size : 10pt">
+    <tr>
+        <td>
+           id
+        </td>
+        <td>
+           Nom
+        </td>
+         <td>
+           Prnom
+        </td>
+         <td>
+            Date de naissance
+        </td>
+        <td>
+            Photo
+        </td>
+         <td>
+            Sexe
+        </td>
+         <td>
+            Groupe sanguin
+        </td>
+         <td>
+           Poids
+        </td>
+         <td>
+           Taille
+        </td>
+        <td>
+           Observations
+        </td>
+    </tr>
+{% for consultation in consultations %}
+  <tr>
+        <td>
+           {{consultation.id}}
+        </td>
+         <td>
+           {{consultation.nom}}
+        </td>
+         <td>
+         {{consultation.prenom}}
+        </td>
+         <td>
+         {{consultation.date_naissance}}
+        </td>
+        <td>
+          {{consultation.photo}}
+        </td>
+         <td>
+          {{consultation.sexe}}
+        </td>
+         <td>
+          {{consultation.groupe_sanguin}}
+        </td>
+         <td>
+          {{consultation.poids}}
+        </td>
+         <td>
+          {{consultation.taille}}
+        </td>
+         <td>
+          {{consultation.observations}}
+        </td>
+         
+    </tr>
+{%endfor%}
+</table>
+{% endblock %}
