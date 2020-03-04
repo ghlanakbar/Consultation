@@ -24,7 +24,7 @@ t_choice = (
 		('aaaa-mm-jj', 'aaaa-mm-jj'),
 		)
 
-class UserRegistrar(forms.Form):
+class ConsultationRegistrer(forms.Form):
 	#photo = forms.ImageField(required=True)
 	nom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	prenom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
