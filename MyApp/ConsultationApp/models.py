@@ -6,7 +6,7 @@ from django.db import models
 
 # Create your models here.
 
-class Consultation(models.Model):
+class Consultation(models.Model): #table Consultation
 	nom = models.CharField(max_length=200)
 	prenom = models.CharField(max_length=200)
 	date_naissance= models.DateTimeField()
