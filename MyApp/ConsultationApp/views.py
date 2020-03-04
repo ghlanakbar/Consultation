@@ -18,7 +18,7 @@ def Consultation(request):
 	return render(request,'consultations.html',context)
 
 def Register(request):
-	form_data=forms.UserRegistrar(request.POST or None)
+	form_data=forms.ConsultationRegistrer(request.POST or None)
 	msg=''
 	if form_data.is_valid():
 		consultation=models.Consultation()
