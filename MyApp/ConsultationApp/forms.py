@@ -1,16 +1,20 @@
+
+
+
+
 #formular
 from django import forms
 from .models import Consultation
 
 s_choice = (
 		('femme', 'Femme'),
-		('homme', 'Homme'),
+		('homme', 'Homme'),   #type du sexe
 		)
 g_choice = (
 		('o+', 'O+'),
 		('o-', 'O-'),
 		('b+', 'B+'),
-		('b-', 'B-'),
+		('b-', 'B-'),  #type de groupe sangui
 		('a-', 'A-'),
 		('a+', 'A+'),
 		('ab-','AB-'),
