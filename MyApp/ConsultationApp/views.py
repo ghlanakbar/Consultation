@@ -1,4 +1,6 @@
-#les views
+#les views 
+
+# django utlise le modele , view et templates
 from django.shortcuts import render
 
 # Create your views here.
@@ -30,7 +32,7 @@ def Register(request):
 		consultation.taille=form_data.cleaned_data['taille']
 		consultation.observations=form_data.cleaned_data['observations']
 		consultation.save()
-		msg='data is saved'
+		msg='Enregister avec succer'
 
 	context={
 		'formregister':form_data,
