@@ -16,13 +16,17 @@ g_choice = (
 		('ab-','AB-'),
 		('ab+','AB+'),	
 		)
+t_choice = (
+		('aaaa-mm-jj', 'aaaa-mm-jj'),
+		)
 
 class UserRegistrar(forms.Form):
-	#photo = forms.ImageField()
+	#photo = forms.ImageField(required=True)
 	nom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	prenom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	date_naissance = forms.CharField(required=True, widget=forms.DateInput(attrs={'class': 'form-control'} ))
-	sexe = forms.ChoiceField(choices=s_choice)
+	fomat= forms.ChoiceField(choices=t_choice)
+	sexe = forms.ChoiceField(choices=s_choice) 
 	groupe_sanguin = forms.ChoiceField(choices=g_choice)
 	poids = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	taille = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
