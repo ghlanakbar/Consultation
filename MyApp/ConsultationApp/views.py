@@ -10,14 +10,14 @@ from ConsultationApp import forms
 
 
 
-def Consultation(request):
+def Consultation(request): #view du liste des Consultations
 	consultations=models.Consultation.objects.all()
 	context={
 	'consultations':consultations
 	}
 	return render(request,'consultations.html',context)
 
-def Register(request):
+def Register(request): #view du formulaire Consultation
 	form_data=forms.ConsultationRegistrer(request.POST or None)
 	msg=''
 	if form_data.is_valid():
