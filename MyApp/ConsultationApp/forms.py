@@ -14,7 +14,7 @@ g_choice = (
 		('o+', 'O+'),
 		('o-', 'O-'),
 		('b+', 'B+'),
-		('b-', 'B-'),  #type de groupe sangui
+		('b-', 'B-'),  #type de groupe sanguin
 		('a-', 'A-'),
 		('a+', 'A+'),
 		('ab-','AB-'),
@@ -24,7 +24,7 @@ t_choice = (
 		('aaaa-mm-jj', 'aaaa-mm-jj'),
 		)
 
-class ConsultationRegistrer(forms.Form):
+class ConsultationRegistrer(forms.Form): #formulair du Consultation
 	#photo = forms.ImageField(required=True)
 	nom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
 	prenom = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'} ))
