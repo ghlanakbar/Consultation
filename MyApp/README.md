@@ -37,7 +37,7 @@ ou
 
 $python3 manage.py runserver
 
-Partie Bases de donnée 
+Partie Base de donnée 
 Page admin du django (Avec la base de donnée SQLITE)
                   
 http://127.0.0.1:8000/admin/
